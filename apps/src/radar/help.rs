@@ -36,6 +36,7 @@ pub fn build_tab_help<A: tui::backend::Backend>(f: &mut tui::Frame<A>, chunks: &
         Row::new(vec!["h", "control --disable-heading"]),
         Row::new(vec!["t", "control --disable-track"]),
         Row::new(vec!["n", "toggle --disable-callsign"]),
+        Row::new(vec!["r", "toggle --disable-range-indicators"]),
         Row::new(vec!["TAB", "Move to Next screen"]),
         Row::new(vec!["q", "Quit this app"]),
         Row::new(vec!["ctrl+c", "Quit this app"]),

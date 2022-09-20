@@ -855,6 +855,10 @@ fn draw_lines(ctx: &mut tui::widgets::canvas::Context<'_>) {
     });
 }
 
+fn draw_range_circles(ctx: &mut tui::widgets::canvas::Context<'_>) {
+    
+}
+
 /// Draw locations on the map
 pub fn draw_locations(ctx: &mut tui::widgets::canvas::Context<'_>, settings: &Settings) {
     for location in &settings.opts.locations {

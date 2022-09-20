@@ -136,6 +136,10 @@ pub struct Opts {
     /// Control the max range of the receiver in km
     #[clap(long, default_value = "500")]
     pub max_range: f64,
+    
+    /// Disable display of circular range indicators on Map
+    #[clap(long)]
+    pub disable_range_indicators: bool,
 }
 
 #[cfg(test)]
@@ -168,6 +172,7 @@ mod tests {
             disable_track: false,
             retry_tcp: false,
             max_range: 500.0,
+            disable_range_indicators: false,
         };
         assert_eq!(exp_opt, opt);
 
@@ -213,6 +218,7 @@ mod tests {
             disable_track: false,
             retry_tcp: false,
             max_range: 500.0,
+            disable_range_indicators: false,
         };
         assert_eq!(exp_opt, opt);
     }
